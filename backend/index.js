@@ -5,7 +5,7 @@ require("dotenv").config(); // To load environment variables from .env file
 
 const app = express();
 const port = process.env.PORT || 3000;
-const cors = require("cors");
+const cors = require("cors"); // Cross-Origin Resource Sharing
 
 const userRouter = require("./routers/user.route");
 const taskRouter = require("./routers/task.route");
